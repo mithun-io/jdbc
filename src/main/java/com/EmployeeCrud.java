@@ -7,7 +7,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class EmployeeCrud {
-	// MySQL -> CREATE DATABASE employees;
 	static final String URL = "jdbc:mysql://localhost:3306/employees?createDatabaseIfNotExist=true";
 	static final String USERNAME = "root";
 	static final String PASSWORD = "root";
