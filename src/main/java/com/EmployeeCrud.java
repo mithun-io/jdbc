@@ -80,7 +80,7 @@ public class EmployeeCrud {
 			System.out.println("Salary   : " + resultset.getLong("salary"));
 			System.out.println("Hiredate : " + resultset.getDate("hiredate"));
 		} else {
-			System.out.println("Employee not found");
+			System.out.println("employee not found");
 		}
 		resultset.close();
 		statement.close();
@@ -93,7 +93,7 @@ public class EmployeeCrud {
 
 		statement.execute("UPDATE employee SET salary=" + salary + " WHERE id=" + id);
 
-		System.out.println("Updated");
+		System.out.println("updated successfully");
 
 		statement.close();
 		connection.close();
@@ -105,7 +105,7 @@ public class EmployeeCrud {
 
 		statement.execute("DELETE FROM employee WHERE id=" + id);
 
-		System.out.println("Deleted");
+		System.out.println("deleted successfully");
 
 		statement.close();
 		connection.close();
